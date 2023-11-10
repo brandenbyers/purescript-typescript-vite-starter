@@ -7,12 +7,8 @@ function purescriptPlugin(): PluginOption {
     handleHotUpdate({ file, server }) {
       if (file.endsWith('.purs')) {
         console.log('PureScript file updated')
-
-        // Define the command to execute
         const command =
           'spago bundle --platform browser --bundle-type module --source-maps --minify --outfile=src/pure.js'
-
-        // Execute the command
         exec(command, (error, stdout, stderr) => {
           if (error) {
             console.error(`Error: ${error.message}`)
@@ -23,8 +19,6 @@ function purescriptPlugin(): PluginOption {
             return
           }
           console.log(`Stdout: ${stdout}`)
-
-          // Inform the server about the update
           server.ws.send({
             type: 'full-reload',
             path: '*',

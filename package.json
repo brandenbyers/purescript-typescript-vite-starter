@@ -1,13 +1,12 @@
 {
-  "name": "pure-ttt",
+  "name": "purescript-typescript-vite-starter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "install-pure-type-gen": "git clone https://github.com/minoki/purescript-tsd-gen.git && cd purescript-tsd-gen && stack install --stack-yaml=stack-purs0.15.9.yaml"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",

@@ -4,7 +4,7 @@ package:
     - effect
     - prelude
     - strings
-  name: pure-ttt
+  name: purescript-typescript-vite-starter
   test:
     dependencies: []
     main: Test.Main
