@@ -12,6 +12,7 @@
   "devDependencies": {
     "@types/node": "^20.9.0",
     "esbuild": "0.19.5",
+    "prettier": "^3.0.3",
     "purescript": "^0.15.12",
     "spago": "^0.93.18",
     "typescript": "^5.0.2",

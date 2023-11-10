@@ -3,6 +3,7 @@ package:
     - console
     - effect
     - prelude
+    - strings
   name: pure-ttt
   test:
     dependencies: []
